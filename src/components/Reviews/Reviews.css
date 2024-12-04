@@ -1,0 +1,100 @@
+.reviews {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+.right-rev {
+ flex: 1;
+ position: relative;
+}
+.left-rev {
+  display: flex;
+  gap: 2rem;
+  flex: 1 1;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: white;
+}
+.left-rev>:nth-child(1){
+  color: var(--orange);
+  font-weight: bold;
+}
+.left-rev>:nth-child(2),
+.left-rev>:nth-child(3){
+  font-weight: bold;
+  font-size: 3rem;
+}
+.left-rev>:nth-child(4){
+  text-transform: none;
+  text-align: justify;
+  letter-spacing: 2px;
+  line-height: 40px;
+}
+.right-rev>img {
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+  right: 15rem;
+  top: 2rem;
+}
+.right-rev>:nth-child(1){
+  position: absolute;
+  width: 17rem;
+  height: 20rem;
+  background-color: transparent;
+  border: 2px solid orange;
+  top: 0.9rem;
+  right: 16rem;
+}
+.right-rev>:nth-child(2){
+  position: absolute;
+  width: 17rem;
+  height: 19rem;
+  background: #ffc64b;
+  top: 4rem;
+  right: 14rem;
+}
+.arrows{
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  left: 7rem;
+  bottom: 2rem;
+}
+.arrows>img{
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+  .reviews {
+    flex-direction: column;
+  }
+  .left-rev >:nth-child(2),
+  .left-rev >:nth-child(3) {
+    font-size: xx-large;
+  }
+  .right-rev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .right-rev > div {
+    position: relative;
+    display: none;
+  }
+  .right-rev>img {
+    top: 0;
+    right: 0;
+    position: relative;
+    align-self: center;
+  }
+  .right-rev>:last-child{
+    display: block;
+    bottom: 0; 
+    left: 0;
+  }
+}

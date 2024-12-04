@@ -1,0 +1,66 @@
+.signup{
+  display: flex;
+  padding:  2rem;
+}
+.left-sign{
+  flex: 1;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  font-size: 2.5rem;
+  justify-items: center;
+}
+.left-sign>hr{
+  position: absolute;
+  width: 25rem;
+  border: 2px solid var(--orange);
+  border-radius: 20%;
+  margin: -1px 0;
+}
+.left-sign>div{
+  display: flex;
+  gap: 1rem;
+}
+.right-sign{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  justify-content: flex-start;
+}
+.email-box {
+  display: flex;
+  gap: 3rem;
+  background-color: gray;
+  padding: 1rem 3rem;
+}
+.email-box>input{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--lightgray);
+}
+::placeholder{
+  color:var(--lightgray);
+}
+.btn-sign {
+  background-color: var(--orange);
+  color: white;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px){
+  .signup {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .left-sign {
+    font-size: x-large;
+    flex-direction: column;
+  }
+  .email-box{
+    padding: 2rem;
+    transform: scale(0.7);
+  }
+}

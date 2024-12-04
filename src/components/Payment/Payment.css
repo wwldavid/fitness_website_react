@@ -1,0 +1,96 @@
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: -4rem;
+  padding: 0 2rem;
+  position: relative;
+} 
+.programs-headers {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  gap: 4rem;
+  position: relative;
+}
+
+ .pay-blur-1 {
+  position: absolute;
+  width: 32rem;
+  height: 23rem;
+  top: 6rem;
+  left: 0rem;
+}
+ .pay-blur-2 {
+  position: absolute;
+  width: 32rem;
+  height: 23rem;
+  top: 10rem;
+  right: 0rem;
+}
+.programs {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.program {
+  display: flex;
+  flex-direction: column;
+  background: var(--caloryCard);
+  color: white;
+  gap: 2rem;
+  padding: 1.5rem;
+  width: 20rem;
+}
+.program:nth-child(2){
+  background: var(--cardbg);
+  transform: scale(1.1)
+}
+.program>img{
+  width: 4rem;
+  height: 4rem;
+}
+
+.program>:nth-child(2){
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.program>:nth-child(3){
+  font-size: 3rem;
+  font-weight: bold;
+}
+.program>:nth-child(5){
+  font-size: 0.8rem;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.feature>img{
+  width: 1rem;
+}
+
+.programs>:nth-child(2)>button{
+  color: var(--orange);
+}
+.btn-s {
+  border-radius: 8px;
+}
+@media screen and (max-width: 768px){
+  .payment-container {
+    flex-direction: column;
+  }
+  .programs {
+    flex-direction: column;
+  }
+  .programs>:nth-child(2){
+    transform: none;
+  }
+}
